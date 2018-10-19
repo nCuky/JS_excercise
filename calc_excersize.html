@@ -3,30 +3,49 @@
 <head>
 </head>
 <link rel="stylesheet" type="text/css" href="calculator.css">
-<script src="excercise_calculator.js">
-</script>
+
 
 <body>
+    <script src="excercise_calculator.js"></script>
+
     <h1 class>
-        KALKOOLATORE
+        KALK
     </h1>
     <div>
         <table>
             <tr>
+                <td class="opInfoCell">
+                    <p class="opInfo" id="operand1"></p>
+                </td>
+                <td class="opInfoCell">
+                    <p class="opInfo" id="operator"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="inputArea" class="inputArea">
+                </td>
+            </tr>
+            <tr>
                 <th>
-                    <button class="calc_button" onclick="document.getElementById('inputArea').innerHTML">+</button>
-                    <button class="calc_button">-</button>
-                    <button class="calc_button">*</button>
-                    <button class="calc_button">/</button>
-                    <button class="calc_button">%</button>
-                    <button class="calc_button">^</button>
-                    <button class="calc_button">=</button>
+                    <button class="calc_button" id="btnAdd" onclick="eventClick('+')">+</button>
+                    <!-- <input type="button" class="calc_button" id="btnInpAdd">  -->
+                    <button class="calc_button" id="btnSubtract" onclick="eventClick('-')">-</button>
+                    <button class="calc_button" id="btnMultiply" onclick="eventClick('*')">*</button>
+                    <button class="calc_button" id="btnDivide" onclick="eventClick('/')">/</button>
+                    <button class="calc_button" id="btnModulus" onclick="eventClick('%')">%</button>
+                    <button class="calc_button" id="btnPower" onclick="eventClick('^')">^</button>
+                    <button class="calc_button" id="btnEquals" onclick="eventClick('=')">=</button>
 
 
                 </th>
             </tr>
+
+
             <tr>
-                <textarea></textarea>
+                <td>
+                    <textarea id="resultArea" readonly="readonly"></textarea>
+                </td>
             </tr>
         </table>
     </div>

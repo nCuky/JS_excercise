@@ -10,3 +10,18 @@
   border-radius: 4px;
   border-color: brown;
 }
+
+.inputArea {
+  height: 2em;
+}
+
+.opInfoCell {
+  width: 50px;
+}
+
+.opInfo {
+  font-weight: bold;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+}
